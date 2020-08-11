@@ -1,0 +1,15 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "description": "Little demo of PWA functionality",
+  "main": "pwa_workshop_demo",
+  "author": "Sven May",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {},
+  "scripts": {
+    "clean": "rm -r dist/*",
+    "copy_static": "cp -r images dist/ && cp src/*.html dist/ && cp src/sw.js dist/ && cp src/manifest.json dist/ && cp -r src/workbox* dist/",
+    "build": "npm run clean && npm run copy_static"
+  }
+}
